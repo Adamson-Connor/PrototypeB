@@ -1,0 +1,27 @@
+@import url("project://database/Packages/com.overdrive.shared/Editor/Resources/UI/Overdrive_StyleVariables.uss?fileID=7433441132597879392&guid=c008b175a7622a346bdd0d4f24f1f855&type=3#Overdrive_StyleVariables");
+#Tool-Icon {
+    background-image: resource('Images/Pins_AssetStore_Icon');
+    -unity-background-scale-mode: scale-to-fit;
+    margin-right: 6px;
+    flex-shrink: 0;
+    min-height: 80px;
+    min-width: 80px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    align-self: flex-start;
+    max-width: 80px;
+}
+
+.package-info-text {
+    white-space: normal;
+    flex-grow: 1;
+}
+
+.settings-scroll-view {
+    margin-top: var(--panel-padding);
+    margin-right: var(--panel-padding);
+    margin-bottom: var(--panel-padding);
+    margin-left: var(--panel-padding);
+}
