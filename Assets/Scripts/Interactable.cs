@@ -5,7 +5,7 @@ public class Interactable : MonoBehaviour
 {
     Outline outline;
     public string message;
-
+    [SerializeField]  private  DoorScript doorScript;
     public UnityEvent onInteraction;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,8 +22,6 @@ public class Interactable : MonoBehaviour
     { 
     outline.enabled = false;
     }
-
-
     public void EnableOutline()
     {
         outline.enabled = true;
