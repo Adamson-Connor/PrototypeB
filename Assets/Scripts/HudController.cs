@@ -1,9 +1,28 @@
-using UnityEngine;
+using StarterAssets;
 using TMPro;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 public class HudController : MonoBehaviour
 {
+    private bool isPaused;
+    private bool isLosing;
+    private int LostCount = 0;
+    public InputActionAsset inputActions;
+    private InputAction pauseAction;
     public static HudController instance;
+    [SerializeField] GameObject SpoonHud;
+    [SerializeField] GameObject LoseUI;
+    [SerializeField] GameObject PauseUI;
+    public ProgressBar ProgBar;
+   // public TeleportManager TeleportManager;
+    public StumbleScript StumbleScript;
+    [SerializeField] int StairVal;
+    [SerializeField] int DoorVal;
+    [SerializeField] int StumbleVal;
 
+    private int MaxObjective;
+    [SerializeField] int CurrentObjective;
     private void Awake()
     {
         instance = this;
@@ -11,13 +30,93 @@ public class HudController : MonoBehaviour
 
     [SerializeField] TMP_Text interactiontext;
 
-    public void EnableInteractionText (string text)
+    private void Start()
+    {
+        SpoonHud.GetComponent<ProgressBar>();
+        ProgBar.GetProgress();
+        //As prototype is short with no saves I can start with full bar and status but if tweaking in future make sure status is known on level start
+    }
+    private void Update()
+    {
+        
+    }
+    public void Pause()
+    {
+        isPaused = true;
+        PauseUI.SetActive(true);
+        Time.timeScale = 0;
+    }
+    private void Updateplayerstatus()
+    {
+        ProgBar.GetProgress();
+       // ProgBar.PainStatus();
+
+    }
+    public void StumbleInteraction()
+    {
+        ProgBar.ChangeResourceAmount(StumbleVal);
+        // ProgBar.Spoon = StumbleVal;
+        //  ProgBar.DecreaseProgress();
+        Updateplayerstatus();
+    }
+    public void DoorInteraction()
+    {
+        //  TeleportManager.DestinationTP();
+        // ProgBar.Spoon = DoorVal;
+        //ProgBar.DecreaseProgress();
+
+        ProgBar.ChangeResourceAmount(DoorVal);   
+        Updateplayerstatus();
+    }
+    public void StairInteraction()
+    {
+        ProgBar.ChangeResourceAmount(StairVal);
+      //  ProgBar.Spoon = StairVal;
+      //  ProgBar.DecreaseProgress();
+        Updateplayerstatus();
+        //  TeleportManager.DestinationTP();
+    }
+    private void UpdateObjective()
+    {
+        if (CurrentObjective == MaxObjective)
+            return;
+        CurrentObjective++;
+    }
+    public void Lose()
+    {
+        SceneManager.LoadSceneAsync(0);
+    }
+
+    public void Resume()
+    {
+     /* if (isLosing == true)
+        {
+            LostCount += 1;
+           
+        }*/
+     isPaused = false;
+        isLosing = false;
+        Time.timeScale = 1;
+        LoseUI.SetActive (false);
+        PauseUI.SetActive(false);
+
+        /*If Open, Close Lose/pause Screen
+        Increase progress by x amount that can be changed in editor for balancing
+        animation? after a lose
+        */
+    }
+    public void EnableInteractionText(string text)
     {
         interactiontext.text = text + " (Interact) ";
         interactiontext.gameObject.SetActive(true);
     }
-    public void DisableInteractionText ()
+    public void DisableInteractionText()
     {
         interactiontext.gameObject.SetActive(false);
     }
 }
+
+
+
+
+    

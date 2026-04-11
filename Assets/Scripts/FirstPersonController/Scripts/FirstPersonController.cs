@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.Animations;
+
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
@@ -64,7 +66,9 @@ namespace StarterAssets
 		private float _jumpTimeoutDelta;
 		private float _fallTimeoutDelta;
 
-	
+		[SerializeField] HudController HudController;
+
+		public bool MenuOpen;
 #if ENABLE_INPUT_SYSTEM
 		private PlayerInput _playerInput;
 #endif
@@ -94,8 +98,17 @@ namespace StarterAssets
 				_mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
 			}
 		}
+        /*private void OnEnable()
+        {
+            _playerInput.actions["Menu"].performed += SwitchActionMap;
+            
+        }*/
+       /* private void OnDisable()
+        {
+            _playerInput.actions["Menu"].performed -= SwitchActionMap;
 
-		private void Start()
+        }*/
+        private void Start()
 		{
 			_controller = GetComponent<CharacterController>();
 			_input = GetComponent<StarterAssetsInputs>();
@@ -115,9 +128,18 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
-		}
+			
+        }
 
-		private void LateUpdate()
+	  /*  public void Unpause()
+		{
+			_playerInput.SwitchCurrentActionMap("Player");
+		}
+		private void SwitchActionMap(InputAction.CallbackContext context)
+		{
+            _playerInput.SwitchCurrentActionMap("UI");
+		}*/
+        private void LateUpdate()
 		{
 			CameraRotation();
 		}
@@ -263,6 +285,13 @@ namespace StarterAssets
 
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
+		}
+
+		public void Teleport (Vector3 position, Quaternion rotation)
+		{
+			transform.position = position;
+			Physics.SyncTransforms();
+		
 		}
 	}
 }

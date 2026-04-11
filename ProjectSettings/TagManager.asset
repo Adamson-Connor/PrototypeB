@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - Interactable
+  - Obstacle
   layers:
   - Default
   - TransparentFX
