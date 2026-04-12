@@ -82,6 +82,14 @@ public class HudController : MonoBehaviour
             return;
         CurrentObjective++;
     }
+    public void PauseTime()
+    {
+        Time.timeScale = 0;
+    }
+    public void ResumeTime()
+    {
+        Time.timeScale = 1;
+    }
     public void Lose()
     {
         SceneManager.LoadSceneAsync(0);
