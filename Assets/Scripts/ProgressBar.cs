@@ -23,7 +23,7 @@ public class ProgressBar : MonoBehaviour
   //  public bool StartFull= false;
     [SerializeField] HudController hudManager;
     public int Spoon = 0;
-   /* [SerializeField]
+   [SerializeField]
     GameObject Orange;
     [SerializeField]
     GameObject Yellow;
@@ -35,7 +35,7 @@ public class ProgressBar : MonoBehaviour
     int YellowNum;
     [SerializeField]
     int OrangeNum;
-    */
+    
    
    
    
@@ -54,7 +54,7 @@ public class ProgressBar : MonoBehaviour
         float fillamount = (float)CurrentValue / MaxValue;
         bar.fillAmount = fillamount;
     }
-    /*
+    
     public void PainStatus()
     {
         if (CurrentValue == MaxValue)
@@ -78,19 +78,19 @@ public class ProgressBar : MonoBehaviour
             Yellow.SetActive(false);
             Orange.SetActive(true);
         }
-        if (StumbleScript.IsStumbling == true)
+        /*if (StumbleScript.IsStumbling == true)
         {
             UnHurt.SetActive(false);
             Orange.SetActive(false);
             Yellow.SetActive(false);
             Red.SetActive(true) ;
-        }
+        }*/
         else
         {
             Red.SetActive(false);
         }
     }
-
+    /*
     public void DrawSpoons()
     {
         ClearSpoon();
@@ -171,7 +171,7 @@ public class ProgressBar : MonoBehaviour
     {
         if (!OverkillMode && CurrentValue + amount <0)
             return false;
-        CurrentValue += amount;
+        CurrentValue -= amount;
         CurrentValue = Mathf.Clamp(CurrentValue, MinValue, MaxValue);
 
         bar.fillAmount = (float)CurrentValue / MaxValue;

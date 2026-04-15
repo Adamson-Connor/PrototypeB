@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using UnityEngine.Animations;
 
 #if ENABLE_INPUT_SYSTEM
@@ -13,6 +14,7 @@ namespace StarterAssets
 #endif
 	public class FirstPersonController : MonoBehaviour
 	{
+		[SerializeField] private GameObject PopUp;
 		[Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
 		public float MoveSpeed = 6.0f;
@@ -71,13 +73,14 @@ namespace StarterAssets
 		public bool MenuOpen;
 #if ENABLE_INPUT_SYSTEM
 		private PlayerInput _playerInput;
+        InputAction menuAction;
 #endif
-		private CharacterController _controller;
+        private CharacterController _controller;
 		private StarterAssetsInputs _input;
 		private GameObject _mainCamera;
 
 		private const float _threshold = 0.01f;
-
+		
 		private bool IsCurrentDeviceMouse
 		{
 			get
@@ -114,6 +117,7 @@ namespace StarterAssets
 			_input = GetComponent<StarterAssetsInputs>();
 #if ENABLE_INPUT_SYSTEM
 			_playerInput = GetComponent<PlayerInput>();
+			menuAction = InputSystem.actions.FindAction("Menu");
 #else
 			Debug.LogError( "Starter Assets package is missing dependencies. Please use Tools/Starter Assets/Reinstall Dependencies to fix it");
 #endif
@@ -129,6 +133,13 @@ namespace StarterAssets
 			GroundedCheck();
 			Move();
 			
+			if (PopUp.activeInHierarchy == true)
+			{
+				if(menuAction.isPressed()
+				{
+
+				}
+			}
         }
 
 	  /*  public void Unpause()

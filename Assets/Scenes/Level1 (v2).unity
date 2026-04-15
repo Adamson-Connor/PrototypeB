@@ -179,6 +179,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2135704477}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 7868508896445191486, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -2748,6 +2756,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1338810147}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 7868508896445191486, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -2757,6 +2773,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+--- !u!1 &267190171 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2941514353793689222, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+  m_PrefabInstance: {fileID: 438675543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &288831376
 GameObject:
   m_ObjectHideFlags: 0
@@ -3342,6 +3363,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1579498708}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 7868508896445191486, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -3449,6 +3478,17 @@ MonoBehaviour:
   HudManagerObj: {fileID: 438675545}
   hudManager: {fileID: 438675544}
   Spoon: 0
+  Orange: {fileID: 267190171}
+  Yellow: {fileID: 1541154527}
+  UnHurt: {fileID: 406986624}
+  Red: {fileID: 1285004278}
+  YellowNum: 90
+  OrangeNum: 50
+--- !u!1 &406986624 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6595903520373230816, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+  m_PrefabInstance: {fileID: 438675543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -3641,6 +3681,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 618981191}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 7868508896445191486, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -5326,6 +5374,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3138595603801771419, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3138595603801771419, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3666474373373573187, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5708761023166493798, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5708761023166493798, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5708761023166493798, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5708761023166493798, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -30
+      objectReference: {fileID: 0}
     - target: {fileID: 6239468325478514686, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
       propertyPath: hudController
       value: 
@@ -5338,10 +5414,34 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6595903520373230816, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312541752135850732, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312541752135850732, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312541752135850732, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312541752135850732, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -30
+      objectReference: {fileID: 0}
     - target: {fileID: 7552877398251644523, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
       propertyPath: LoseUI
       value: 
       objectReference: {fileID: 1304032488}
+    - target: {fileID: 7552877398251644523, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+      propertyPath: DoorVal
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 7552877398251644523, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
       propertyPath: PauseUI
       value: 
@@ -5354,6 +5454,14 @@ PrefabInstance:
       propertyPath: SpoonHud
       value: 
       objectReference: {fileID: 386494215}
+    - target: {fileID: 7552877398251644523, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+      propertyPath: StairVal
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7552877398251644523, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+      propertyPath: StumbleVal
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7552877398251644523, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
       propertyPath: playerInput
       value: 
@@ -5960,6 +6068,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 785793986}
+    - target: {fileID: 6366237144779176354, guid: 7a712d568bc5e7540b13aa912895121e, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 6366237144779176354, guid: 7a712d568bc5e7540b13aa912895121e, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 6473385884492805692, guid: 7a712d568bc5e7540b13aa912895121e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -74.071335
@@ -6933,6 +7049,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1918964712}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 7868508896445191486, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -7691,6 +7815,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1986432397}
     m_Modifications:
+    - target: {fileID: -8469743883680732483, guid: a98f495408f3af049baad303614c0928, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: -8469743883680732483, guid: a98f495408f3af049baad303614c0928, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 1713727316890784339, guid: a98f495408f3af049baad303614c0928, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -7824,6 +7956,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2138341611}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 7868508896445191486, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -10047,6 +10187,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1548246119}
+    - target: {fileID: 7085109844254282596, guid: 335714c350ba0754b8fcf93eea223b7d, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 7085109844254282596, guid: 335714c350ba0754b8fcf93eea223b7d, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 7852986235708358946, guid: 335714c350ba0754b8fcf93eea223b7d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -10121,6 +10269,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1567325081}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 7868508896445191486, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -11100,6 +11256,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1138671415}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 7868508896445191486, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -11797,6 +11961,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1939635620}
+    - target: {fileID: 6366237144779176354, guid: 7a712d568bc5e7540b13aa912895121e, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 6366237144779176354, guid: 7a712d568bc5e7540b13aa912895121e, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 6473385884492805692, guid: 7a712d568bc5e7540b13aa912895121e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.727417
@@ -12307,6 +12479,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1675678831}
+    - target: {fileID: 6366237144779176354, guid: 7a712d568bc5e7540b13aa912895121e, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 6366237144779176354, guid: 7a712d568bc5e7540b13aa912895121e, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 6473385884492805692, guid: 7a712d568bc5e7540b13aa912895121e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 36.264023
@@ -13831,6 +14011,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 951085130}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 7868508896445191486, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -14496,6 +14684,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271787491}
   m_CullTransparentMesh: 1
+--- !u!1 &1285004278 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3774844697211845154, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+  m_PrefabInstance: {fileID: 438675543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1299659648
 GameObject:
   m_ObjectHideFlags: 0
@@ -22021,6 +22214,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1808827053}
+    - target: {fileID: 7085109844254282596, guid: 335714c350ba0754b8fcf93eea223b7d, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 7085109844254282596, guid: 335714c350ba0754b8fcf93eea223b7d, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 7852986235708358946, guid: 335714c350ba0754b8fcf93eea223b7d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -22268,6 +22469,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 347961777}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 7868508896445191486, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -23073,6 +23282,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 482617990}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1541154527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3666474373373573187, guid: e788520c9e97cd742a42bff6aa5a78b6, type: 3}
+  m_PrefabInstance: {fileID: 438675543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1544318183
 GameObject:
   m_ObjectHideFlags: 0
@@ -23994,6 +24208,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1986432397}
     m_Modifications:
+    - target: {fileID: -8469743883680732483, guid: a98f495408f3af049baad303614c0928, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: -8469743883680732483, guid: a98f495408f3af049baad303614c0928, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 1713727316890784339, guid: a98f495408f3af049baad303614c0928, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -24127,6 +24349,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2071728908}
+    - target: {fileID: 7085109844254282596, guid: 335714c350ba0754b8fcf93eea223b7d, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 7085109844254282596, guid: 335714c350ba0754b8fcf93eea223b7d, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 7852986235708358946, guid: 335714c350ba0754b8fcf93eea223b7d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -49504,6 +49734,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 697856255}
+    - target: {fileID: 7085109844254282596, guid: 335714c350ba0754b8fcf93eea223b7d, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 7085109844254282596, guid: 335714c350ba0754b8fcf93eea223b7d, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 7852986235708358946, guid: 335714c350ba0754b8fcf93eea223b7d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -49573,6 +49811,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 906821624}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 5882754868792176024, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 7868508896445191486, guid: dbac869ef7031df48a9195011e5a960c, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -49970,6 +50216,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1701636619}
+    - target: {fileID: 6366237144779176354, guid: 7a712d568bc5e7540b13aa912895121e, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 6366237144779176354, guid: 7a712d568bc5e7540b13aa912895121e, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 6473385884492805692, guid: 7a712d568bc5e7540b13aa912895121e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -75.93
@@ -50253,6 +50507,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1423109027}
+    - target: {fileID: 7085109844254282596, guid: 335714c350ba0754b8fcf93eea223b7d, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 438675544}
+    - target: {fileID: 7085109844254282596, guid: 335714c350ba0754b8fcf93eea223b7d, type: 3}
+      propertyPath: onTriggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StumbleInteraction
+      objectReference: {fileID: 0}
     - target: {fileID: 7852986235708358946, guid: 335714c350ba0754b8fcf93eea223b7d, type: 3}
       propertyPath: m_Mesh
       value: 

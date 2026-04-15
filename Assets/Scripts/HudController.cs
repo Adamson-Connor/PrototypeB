@@ -49,7 +49,7 @@ public class HudController : MonoBehaviour
     private void Updateplayerstatus()
     {
         ProgBar.GetProgress();
-       // ProgBar.PainStatus();
+        ProgBar.PainStatus();
 
     }
     public void StumbleInteraction()
