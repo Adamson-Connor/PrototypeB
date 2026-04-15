@@ -5,11 +5,11 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 public class HudController : MonoBehaviour
 {
-    private bool isPaused;
-    private bool isLosing;
-    private int LostCount = 0;
+    // private bool isPaused;
+    // private bool isLosing;
+    // private int LostCount = 0;
+    [SerializeField] private PlayerInput playerInput;
     public InputActionAsset inputActions;
-    private InputAction pauseAction;
     public static HudController instance;
     [SerializeField] GameObject SpoonHud;
     [SerializeField] GameObject LoseUI;
@@ -19,7 +19,7 @@ public class HudController : MonoBehaviour
     public StumbleScript StumbleScript;
     [SerializeField] int StairVal;
     [SerializeField] int DoorVal;
-    [SerializeField] int StumbleVal;
+    [SerializeField] int StumbleVal = 1;
 
     private int MaxObjective;
     [SerializeField] int CurrentObjective;
@@ -42,7 +42,7 @@ public class HudController : MonoBehaviour
     }
     public void Pause()
     {
-        isPaused = true;
+       // isPaused = true;
         PauseUI.SetActive(true);
         Time.timeScale = 0;
     }
@@ -76,12 +76,12 @@ public class HudController : MonoBehaviour
         Updateplayerstatus();
         //  TeleportManager.DestinationTP();
     }
-    private void UpdateObjective()
+    /*private void UpdateObjective()
     {
         if (CurrentObjective == MaxObjective)
             return;
         CurrentObjective++;
-    }
+    }*/
     public void PauseTime()
     {
         Time.timeScale = 0;
@@ -94,7 +94,11 @@ public class HudController : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(0);
     }
-
+    public void ChangeActionMap()
+    { // use to to switch between UI and not UI
+        playerInput.SwitchCurrentActionMap("UI");
+        Cursor.visible = true;
+    }
     public void Resume()
     {
      /* if (isLosing == true)
@@ -102,8 +106,8 @@ public class HudController : MonoBehaviour
             LostCount += 1;
            
         }*/
-     isPaused = false;
-        isLosing = false;
+     //isPaused = false;
+      //  isLosing = false;
         Time.timeScale = 1;
         LoseUI.SetActive (false);
         PauseUI.SetActive(false);
