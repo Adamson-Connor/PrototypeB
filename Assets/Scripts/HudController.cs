@@ -97,7 +97,7 @@ public class HudController : MonoBehaviour
     public void ChangeActionMap()
     { // use to to switch between UI and not UI
         playerInput.SwitchCurrentActionMap("UI");
-        Cursor.visible = true;
+      
     }
     public void Resume()
     {

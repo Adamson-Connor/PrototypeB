@@ -1914,18 +1914,6 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 438675544}
         m_TargetAssemblyTypeName: HudController, Assembly-CSharp
-        m_MethodName: PauseTime
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 438675544}
-        m_TargetAssemblyTypeName: HudController, Assembly-CSharp
         m_MethodName: ChangeActionMap
         m_Mode: 1
         m_Arguments:
@@ -1947,6 +1935,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 117894549}
+        m_TargetAssemblyTypeName: CursorController, Assembly-CSharp
+        m_MethodName: MakeCursorVisible
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 438675544}
+        m_TargetAssemblyTypeName: HudController, Assembly-CSharp
+        m_MethodName: PauseTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!4 &55696847
 Transform:
@@ -2696,6 +2708,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 127746638808170171, guid: af31d5059d69fe840b61df5e8b284993, type: 3}
   m_PrefabInstance: {fileID: 116866069}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &117894549 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2075104280191634989, guid: 1b5341f580e678749b9e540205a4b767, type: 3}
+  m_PrefabInstance: {fileID: 2144998804374645657}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d15c273075543904197e8367d10e346a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorController
 --- !u!1001 &175028159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51145,6 +51168,63 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1001 &2144998804374645657
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1386122333313599219, guid: 1b5341f580e678749b9e540205a4b767, type: 3}
+      propertyPath: m_Name
+      value: CursorManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859930689629040650, guid: 1b5341f580e678749b9e540205a4b767, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 986.8937
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859930689629040650, guid: 1b5341f580e678749b9e540205a4b767, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 538.53204
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859930689629040650, guid: 1b5341f580e678749b9e540205a4b767, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859930689629040650, guid: 1b5341f580e678749b9e540205a4b767, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859930689629040650, guid: 1b5341f580e678749b9e540205a4b767, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859930689629040650, guid: 1b5341f580e678749b9e540205a4b767, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859930689629040650, guid: 1b5341f580e678749b9e540205a4b767, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859930689629040650, guid: 1b5341f580e678749b9e540205a4b767, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859930689629040650, guid: 1b5341f580e678749b9e540205a4b767, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859930689629040650, guid: 1b5341f580e678749b9e540205a4b767, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1b5341f580e678749b9e540205a4b767, type: 3}
 --- !u!1001 &4347943114340488429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51214,10 +51294,10 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2073887963}
+      addedObject: {fileID: 1544318184}
     - targetCorrespondingSourceObject: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1544318184}
+      addedObject: {fileID: 2073887963}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9005220659476430823, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       insertIndex: -1
@@ -51530,3 +51610,4 @@ SceneRoots:
   - {fileID: 1986432397}
   - {fileID: 1119887794}
   - {fileID: 55696847}
+  - {fileID: 2144998804374645657}
