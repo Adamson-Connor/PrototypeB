@@ -73,7 +73,7 @@ namespace StarterAssets
 		public bool MenuOpen;
 #if ENABLE_INPUT_SYSTEM
 		private PlayerInput _playerInput;
-        InputAction menuAction;
+        private InputAction menuAction;
 #endif
         private CharacterController _controller;
 		private StarterAssetsInputs _input;
@@ -133,13 +133,11 @@ namespace StarterAssets
 			GroundedCheck();
 			Move();
 			
-			if (PopUp.activeInHierarchy == true)
-			{
-				if(menuAction.isPressed()
+				if(menuAction.IsPressed())
 				{
-
+					PopUp.SetActive(false);
 				}
-			}
+			
         }
 
 	  /*  public void Unpause()
