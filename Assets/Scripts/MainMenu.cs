@@ -2,9 +2,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField]
+    private FadeController fadeController;
+
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync(1);
+        fadeController.LoadScene("Level1 (v2)");
     }
     public void ExitGame()
     {
@@ -12,6 +15,6 @@ public class MainMenu : MonoBehaviour
     }
     public void BackToMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        fadeController.LoadScene("MainMenu");
     }
 }

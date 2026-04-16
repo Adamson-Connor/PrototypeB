@@ -8,7 +8,9 @@ public class HudController : MonoBehaviour
     // private bool isPaused;
     // private bool isLosing;
     // private int LostCount = 0;
-    [SerializeField] private PlayerInput playerInput;
+    [SerializeField]
+    private FadeController fadeController;
+   [SerializeField] private PlayerInput playerInput;
     public InputActionAsset inputActions;
     public static HudController instance;
     [SerializeField] GameObject SpoonHud;
@@ -93,7 +95,7 @@ public class HudController : MonoBehaviour
     }
     public void Lose()
     {
-        SceneManager.LoadSceneAsync(0);
+        fadeController.LoadScene("MainMenu");
     }
     public void ChangeActionMaptoUI()
     { // use to to switch between UI and not UI
