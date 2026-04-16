@@ -45,6 +45,7 @@ public class HudController : MonoBehaviour
        // isPaused = true;
         PauseUI.SetActive(true);
         Time.timeScale = 0;
+        ChangeActionMaptoUI();
     }
     private void Updateplayerstatus()
     {
@@ -94,18 +95,19 @@ public class HudController : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(0);
     }
-    public void ChangeActionMap()
+    public void ChangeActionMaptoUI()
     { // use to to switch between UI and not UI
-        if (playerInput.currentActionMap.Equals("Player"))
-        {
+       
+        
             Cursor.lockState = CursorLockMode.None;
             playerInput.SwitchCurrentActionMap("UI");
-        }
-        else
-        {
-            playerInput.SwitchCurrentActionMap("Player");
-            Cursor.lockState = CursorLockMode.Locked;
-        }
+            Debug.Log("switched to ui action map");
+    }
+    public void ChangeActionMaptoPlayer()
+    {
+        playerInput.SwitchCurrentActionMap("Player");
+        Cursor.lockState = CursorLockMode.Locked;
+        Debug.Log("Changed AM To Player");
     }
     public void Resume()
     {
@@ -119,7 +121,7 @@ public class HudController : MonoBehaviour
         Time.timeScale = 1;
         LoseUI.SetActive (false);
         PauseUI.SetActive(false);
-
+        ChangeActionMaptoPlayer();
         /*If Open, Close Lose/pause Screen
         Increase progress by x amount that can be changed in editor for balancing
         animation? after a lose

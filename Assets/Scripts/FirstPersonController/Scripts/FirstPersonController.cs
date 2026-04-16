@@ -135,7 +135,7 @@ namespace StarterAssets
 			
 				if(menuAction.IsPressed())
 				{
-					PopUp.SetActive(false);
+					HudController.Pause();
 				}
 			
         }
