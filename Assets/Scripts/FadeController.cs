@@ -6,11 +6,11 @@ public class FadeController : MonoBehaviour
 {
     [SerializeField]
     private float FadeDuration = 1;
-    private SceneFade sceneFade;
+    [SerializeField] private SceneFade sceneFade;
 
     private void Awake()
     {
-        sceneFade = GetComponentInChildren<SceneFade>();
+       // sceneFade = GetComponentInChildren<SceneFade>();
     }
     IEnumerator Start()
     {

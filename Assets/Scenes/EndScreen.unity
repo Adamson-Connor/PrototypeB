@@ -584,7 +584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.03160547, g: 0.117233455, b: 0.7283019, a: 1}
+  m_Color: {r: 0.08947661, g: 0.39431998, b: 0.8037735, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -775,7 +775,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5745308200182465999, guid: a2267efb7e57021469d56046e0fdb616, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1335961162}
+      addedObject: {fileID: 1335961163}
   m_SourcePrefab: {fileID: 100100000, guid: a2267efb7e57021469d56046e0fdb616, type: 3}
 --- !u!114 &991281690 stripped
 MonoBehaviour:
@@ -930,18 +930,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5745308200182465999, guid: a2267efb7e57021469d56046e0fdb616, type: 3}
   m_PrefabInstance: {fileID: 991281689}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1335961160 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5351114713131680256, guid: a2267efb7e57021469d56046e0fdb616, type: 3}
-  m_PrefabInstance: {fileID: 991281689}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1335961158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
---- !u!114 &1335961162
+--- !u!114 &1335961163
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -953,7 +942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119828a0144ab8c46bd526d6790634e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneFade
-  Background: {fileID: 1335961160}
+  Background: {fileID: 0}
 --- !u!1 &1351899289
 GameObject:
   m_ObjectHideFlags: 0

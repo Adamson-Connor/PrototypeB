@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
     }
     public void BackToMenu()
     {
+        Time.timeScale = 1.0f;
         fadeController.LoadScene("MainMenu");
     }
 }

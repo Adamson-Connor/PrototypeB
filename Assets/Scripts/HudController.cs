@@ -44,10 +44,11 @@ public class HudController : MonoBehaviour
     }
     public void Pause()
     {
-       // isPaused = true;
+        ChangeActionMaptoUI();
+        // isPaused = true;
         PauseUI.SetActive(true);
         Time.timeScale = 0;
-        ChangeActionMaptoUI();
+      
     }
     private void Updateplayerstatus()
     {

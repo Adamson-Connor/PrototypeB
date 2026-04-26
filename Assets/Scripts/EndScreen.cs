@@ -9,4 +9,8 @@ public class EndScreen : MonoBehaviour
     {
         fadeController.LoadScene("MainMenu");
     }
+    public void EndGame()
+    {
+        fadeController.LoadScene("EndScreen");
+    }
 }

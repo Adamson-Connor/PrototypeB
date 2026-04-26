@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6260435442449211854}
   - component: {fileID: 9195460537927311650}
   - component: {fileID: 7438382217241432335}
-  - component: {fileID: 8895447276529126103}
+  - component: {fileID: 7376447386245663307}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -61,7 +61,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 99
   m_TargetDisplay: 0
 --- !u!114 &9195460537927311650
 MonoBehaviour:
@@ -103,7 +103,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &8895447276529126103
+--- !u!114 &7376447386245663307
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,7 +161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c411cfe46446ef54c8739a295275562a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  FadeDuration: 0
+  FadeDuration: 1
+  sceneFade: {fileID: 7376447386245663307}
 --- !u!1 &5745308200182465999
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,7 +180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5858281446061214115
 RectTransform:
   m_ObjectHideFlags: 0
